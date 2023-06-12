@@ -1,0 +1,177 @@
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(-700px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(700px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideLeftFar {
+  from {
+    transform: translateX(-1100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideRightFar {
+  from {
+    transform: translateX(1100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideUp {
+  from{
+    transform: translateY(700px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+.slideLeft {
+  animation: slideLeft 2s 1s;
+  animation-fill-mode: forwards;
+  transform: translateX(-700px);
+}
+.slideRight {
+  animation: slideRight 2s 1s;
+  animation-fill-mode: forwards;
+  transform: translate(700px);
+}
+.slideLeftFar {
+  animation: slideLeftFar 2s 2s;
+  animation-fill-mode: forwards;
+  transform: translateX(-1100px);
+}
+.slideRightFar {
+  animation: slideRightFar 2s 2.3s;
+  animation-fill-mode: forwards;
+  transform: translate(1100px);
+}
+
+.slideDown {
+  animation: slideDown 1s;
+}
+.slideUp {
+  animation: slideUp 2s 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(800px);
+}
+body {
+  
+  background-color: #211D1C;
+}
+h1 {
+  text-align: center;
+  font-family: Papyrus;
+  color: white;
+  font-size: 50px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.column {
+  background-color: white;
+  width: 450px;
+  height: 450px;
+  margin: 50px;
+  border-radius: 15px;
+  position: relative;
+}
+.image {
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  border-radius: 15px 15px 15px 15px;
+  transition: 0.5s;
+  border: 10px double whitesmoke;
+  
+}
+.recipe-1 {
+  background-image: url(https://www.pantsdownapronson.com/wp-content/uploads/viking-stew-recipe-2.jpg);
+}
+.recipe-2 {
+  background-image: url(https://www.chilesandsmoke.com/wp-content/uploads/2022/09/Smoked-Pork-Belly_Featured.jpg);
+}
+.recipe-3 {
+  background-image: url(https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Slow-Cooked-Pork-Barbecue_EXPS_HSCBZ17_17000_D07_28_3b.jpg);
+}
+
+.title, .description {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.8s;
+}
+.title {
+  top: 10%;
+  font-size: 27px;
+}
+.description {
+  top: 50%;
+  font-size: 21px;
+  width: 60%;
+}
+.image:hover {
+  box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.7) inset;
+  scale: 1.1;
+}
+.image:hover .title, .image:hover .description{
+  opacity: 1;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 25px;
+  transition: 1s;
+}
+.btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  color: whitesmoke;
+  background-color: #211D1C;
+  border: 10px solid whitesmoke;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: translateY(-10px);
+  background-color: whitesmoke;
+  color: #211D1C;
+  scale: 1.1;
+}
