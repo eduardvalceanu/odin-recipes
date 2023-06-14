@@ -1,0 +1,27 @@
+body {
+  background-color: #211D1C;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container{
+  background-color: whitesmoke;
+  width: 700px;
+  height: 1000px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  position: relative;
+}
+h1 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content {
+  position: absolute;
+  top: 10%;
+  font-size: 20px;
+  padding: 0 30px;
+}

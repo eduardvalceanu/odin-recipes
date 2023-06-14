@@ -1,0 +1,341 @@
+@keyframes slideDown {
+  from {
+    transform: translateY(-500px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(-700px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(700px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideLeftFar {
+  from {
+    transform: translateX(-1200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRightFar {
+  from {
+    transform: translateX(1100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideUp {
+  from{
+    transform: translateY(700px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+@keyframes imageAnimation {
+  from{
+    opacity: 0;
+  }
+  to{
+    
+    opacity: 1;
+  }
+}
+
+ @-webkit-keyframes expand{
+  0%{
+    height:0px;
+    }
+  100%{
+    height:1500px;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.expandAnimation {
+    animation: expand 3s;
+  }
+.imageAnimation {
+  animation: imageAnimation 5s;
+}
+.descriptionAnimation {
+  animation: fade-in 3s 1s forwards;
+}
+.time-and-size-container-animation {
+  animation: fade-in 2s 1s forwards ;
+}
+.slideLeft {
+  animation: slideLeft 2s 1s;
+  animation-fill-mode: forwards;
+  transform: translateX(-700px);
+}
+.slideRight {
+  animation: slideRight 2s 1s;
+  animation-fill-mode: forwards;
+  transform: translate(700px);
+}
+.slideLeftFar {
+  animation: slideLeftFar 2s ;
+  animation-fill-mode: forwards;
+  transform: translateX(-1100px);
+}
+.slideRightFar {
+  animation: slideRightFar 2s 2.3s;
+  animation-fill-mode: forwards;
+  transform: translate(1100px);
+}
+
+.slideDown {
+  animation: slideDown 2s;
+}
+.slideUp {
+  animation: slideUp 2s 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(800px);
+}
+
+body {
+  background-color: #211D1C;
+  font-family: 'Times New Roman', Times, serif;
+}
+.odin-recipes {
+  font-family: Papyrus;
+  font-size: 30px;
+  margin-left: 40px;
+  margin-top: -70px;
+  position: absolute;
+  transition: 1s;
+}
+.odin-recipes a{
+  text-decoration: none;
+  color: white;
+}
+.odin-recipes:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.container{
+  background-color: whitesmoke;
+  width: 700px;
+  height: 1500px;
+  display: flex;
+  justify-content: center ;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.imageContainer {
+  background-image: url(https://www.pantsdownapronson.com/wp-content/uploads/viking-stew-recipe-2.jpg);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  left: 50%;
+  margin-top: 15px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-style: double;
+  border: 10px double whitesmoke;
+  box-shadow: 0 0 10px whitesmoke ;
+  background-size: cover;
+}
+.banner{
+  margin-top: 150px;
+  width: 350px;
+  height: 50px;
+  background-color: #211D1C;
+  border: 10px double gray;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px gray;
+  position: relative;
+  transition: 0.5s;
+}
+.banner:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 0 20px 15px gray;
+}
+.title {
+  color: whitesmoke;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+}
+.description {
+  position: absolute;
+  top: 250px;
+  font-size: 22px;
+  padding: 20px;
+  opacity: 0;
+}
+
+.time-and-size-container{
+  position: absolute;
+  top: 400px;
+  font-size: 25px;
+  display: flex;
+  border: 5px double #211D1c;
+  border-radius: 25px 25px 25px 25px;
+  padding: 20px 50px;
+  color: #211D1c;
+  opacity: 0;
+}
+.fa-clock {
+  color: #211D1C;
+}
+.fa-grip-lines-vertical {
+  color: #211D1C;
+}
+.time {
+  margin-left: 10px;
+  margin-right: 15px;
+  width: 150px;
+  text-align: center;
+}
+.size {
+  margin-left: 30px;
+  width: 150px;
+  text-align: center;
+}
+.chapter-title-container {
+  position: absolute;
+  top: 550px;
+  width: 300px;
+  height: 50px;
+  background-color: gray;
+  border: 10px double lightgray;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px lightgray;
+  opacity: 0;
+}
+
+.chapter-title {
+  color: whitesmoke;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+.ingredient-list-container { 
+  height: 300px;
+  font-size: 22px;
+  padding: 20px;
+  width: 500px;
+  position: absolute;
+  top: 650px;
+  display: flex;
+  justify-content: left;
+  margin-right: 5%;
+  opacity: 0;
+}
+ul li {
+  list-style-type: none;
+  position: relative;
+}
+ul li label{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+}
+ul li label:hover input ~ .check {
+  background-color: #ccc;
+}
+ul li label input:checked ~ .check {
+  background-color: #211D1c;
+}
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+ul li label input:checked ~ .check:after {
+  display: block;
+}
+ul li label .check::after{
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid whitesmoke;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+ul li label input:checked ~ .ingredient-text {
+  text-decoration: line-through;
+}
+
+.chapter-title-container-process {
+  position: absolute;
+  top: 1050px;
+  width: 300px;
+  height: 50px;
+  background-color: gray;
+  border: 10px double lightgray;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px lightgray;
+  opacity: 0;
+}
+.instructions-container {
+  height: 300px;
+  font-size: 22px;
+  padding: 20px;
+  width: 500px;
+  position: absolute;
+  top: 1150px;
+  display: flex;
+  justify-content: left;
+  margin-right: 5%;
+  opacity: 0;
+}
+.instructions-list li {
+  margin-top: 15px;
+}

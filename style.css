@@ -1,3 +1,4 @@
+
 @keyframes slideDown {
   from {
     transform: translateY(-100px);
@@ -77,8 +78,8 @@
   transform: translateY(800px);
 }
 body {
-  
   background-color: #211D1C;
+  overflow: hidden;
 }
 h1 {
   text-align: center;
@@ -111,7 +112,6 @@ img {
   border-radius: 15px 15px 15px 15px;
   transition: 0.5s;
   border: 10px double whitesmoke;
-  
 }
 .recipe-1 {
   background-image: url(https://www.pantsdownapronson.com/wp-content/uploads/viking-stew-recipe-2.jpg);
@@ -141,7 +141,7 @@ img {
   width: 60%;
 }
 .image:hover {
-  box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.7) inset;
+  box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.7) inset, 0 0 30px whitesmoke;
   scale: 1.1;
 }
 .image:hover .title, .image:hover .description{
@@ -174,4 +174,5 @@ img {
   background-color: whitesmoke;
   color: #211D1C;
   scale: 1.1;
+  cursor: pointer;
 }
